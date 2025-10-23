@@ -1,0 +1,31 @@
+You are building a website for Solar-Gear, a solar energy solutions company. The website needs to serve both residential and commercial customers, showcasing products and service packages while driving conversions. The site must balance visual appeal with functionality, featuring modern animations and a clear path to purchase. Reference the existing site at https://solargearltd.netlify.app/ for company details, brand identity, and current offerings.
+
+Task
+
+Create a complete 4-page responsive website with the following structure:
+
+Home Page: Include an animated hero section that immediately captures attention and communicates Solar-Gear's value proposition. Feature key benefits, social proof, and clear calls-to-action directing visitors to products and packages.
+
+About Page: Present Solar-Gear's mission, expertise, and credibility in the solar energy industry. Include team information, company values, certifications, and reasons why customers should choose Solar-Gear.
+
+Products Page: Design a visually appealing product catalog featuring solar inverters, batteries, panels, and additional solar equipment. Each product should display with high-quality imagery, specifications, pricing, and an intuitive purchase or inquiry mechanism.
+
+Packages Page: Create two distinct package sections - one for residential customers (3 home packages) and one for commercial customers (3 business packages). Each package should clearly outline what's included, pricing tiers, and benefits, with strong conversion-focused design elements.
+
+Objective
+
+The website should maximize conversions by combining exceptional visual design with strategic user experience. Every page must guide visitors toward making a purchase decision or requesting a consultation. The site should establish Solar-Gear as a trustworthy, professional solar energy provider while making it effortless for customers to understand options and take action.
+
+Knowledge
+
+The website must be fully responsive and work seamlessly across desktop, tablet, and mobile devices
+Animations should enhance user experience without compromising page load speed or accessibility
+The hero section animation should be attention-grabbing but not distracting from the core message
+Product pages need filtering or categorization capabilities if there are multiple items in each category
+Package comparison should be intuitive, allowing customers to quickly identify which option suits their needs
+Include trust signals throughout: testimonials, certifications, warranties, installation guarantees, or energy savings calculators
+Implement clear calls-to-action on every page using action-oriented language
+Consider including interactive elements like hover effects, scroll-triggered animations, and smooth transitions between sections
+The design should reflect the clean, modern, and sustainable nature of solar energy
+Color scheme should align with Solar-Gear's existing brand identity while evoking trust and environmental consciousness
+Navigation must be intuitive with easy access to all four pages from any location on the site
