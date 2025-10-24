@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,16 +15,12 @@ import {
   ArrowRight,
   TrendingDown,
 } from "lucide-react";
-import heroImage from "@assets/generated_images/Kenyan_home_with_solar_panels_69275e87.png";
+import HeroSlider from "@/components/HeroSlider";
 
 export default function Home() {
   const [monthlyBill, setMonthlyBill] = useState("");
   const [savings, setSavings] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   const calculateSavings = () => {
     const bill = parseFloat(monthlyBill);
@@ -136,70 +132,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src={heroImage}
-            alt="Modern home with solar panels"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
-        </div>
-
-        {/* Hero Content */}
-        <div
-          className={`relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <Badge
-            variant="outline"
-            className="mb-6 bg-primary/10 backdrop-blur-sm border-primary/30 text-white"
-            data-testid="badge-hero-tagline"
-          >
-            Powering Kenya's Future
-          </Badge>
-          <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
-            Reliable Solar Energy
-            <br />
-            <span className="text-primary">For Your Home & Business</span>
-          </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Make the switch to clean, affordable, and sustainable solar power.
-            Join hundreds of satisfied customers across Kenya.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/packages">
-              <Button
-                size="lg"
-                className="text-lg font-semibold min-h-12"
-                data-testid="button-hero-get-started"
-              >
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link href="/products">
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg font-semibold min-h-12 bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20"
-                data-testid="button-hero-view-products"
-              >
-                View Products
-              </Button>
-            </Link>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full p-1">
-            <div className="w-1.5 h-3 bg-white/70 rounded-full mx-auto" />
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* Benefits Section */}
       <section className="py-16 md:py-24 bg-background">
